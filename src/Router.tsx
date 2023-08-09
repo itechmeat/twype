@@ -15,7 +15,8 @@ import { RoomsListPage } from "@/pages/rooms/RoomsListPage";
 import { RoomCreatePage } from "@/pages/rooms/RoomCreatePage";
 import { ServicePage } from "@/pages/services/ServicePage";
 import { ProfilePage } from "@/pages/profile/ProfilePage";
-import { ProfileTicketsPage } from "./pages/profile/ProfileTicketsPage";
+import { ProfileTicketsPage } from "@/pages/profile/ProfileTicketsPage";
+import { LandingPage } from "@/pages/LandingPage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -40,6 +41,7 @@ const router = createBrowserRouter(
       </Route>
 
       <Route path="huddle" element={<HuddlePage />} />
+      <Route path="landing" element={<LandingPage />} />
     </Route>
   )
 );
